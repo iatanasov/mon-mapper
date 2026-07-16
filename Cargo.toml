@@ -1,0 +1,19 @@
+[package]
+name = "mon-mapper"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+clap = { version = "4.5.37", features = ["derive", "env", "string"] }
+edid = "0.3.0"
+edid-rs = "0.1.0"
+nom = "3.2.1"
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
+sha2 = "0.10.9"
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["std", "env-filter"] }
+xrandr = { version = "0.2.0", features = [
+  "serde",
+], path = "../xrandr-rs" }
